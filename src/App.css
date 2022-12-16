@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+:root {
+  --gray-blue: hsl(217 19% 38%);
+  --dark-gray-bleu: hsl(217 19% 24%);
+  --dark-blue: hsl(218 23% 16%);
+  --light-cyan: hsl(193 38% 86%);
+  --neon-green: hsl(150 100% 66%);
+}
+
+.App {
+  background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 720px;
+  height: 443px;
+  background-color: var(--dark-gray-bleu);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px 20px 0px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: var(--neon-green);
+  font-size: 0.75em;
+  letter-spacing: 5px;
+  font-family: Manrope;
+  font-weight: 600;
+}
+
+.advice {
+  font-weight: 800;
+  color: var(--light-cyan);
+  font-size: 28px;
+}
+
+.divider {
+  width: 100%;
+}
+
+.newAdvice {
+  border-radius: 100%;
+  background-color: var(--neon-green);
+  width: 86px;
+  height: 86px;
+  border: none;
+  transform: translateY(50%);
+}
+
+.newAdvice:hover {
+  box-shadow: 0px 0px 20px;
+  color: var(--neon-green);
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 200px;
+  }
+
+  .advice {
+    overflow: scroll;
+
+    font-size: 1em;
+  }
+}
